@@ -55,22 +55,6 @@ class Ui_Dialog(object):
         self.label_6.setGeometry(QtCore.QRect(260, 120, 111, 21))
         self.label_6.setObjectName("label_6")
 
-        self.retranslateUi(Dialog)
-        self.buttonBox.accepted.connect(Dialog.accept)  # type: ignore
-        self.buttonBox.rejected.connect(Dialog.reject)  # type: ignore
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
-
-    def retranslateUi(self, Dialog):
-        _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.label.setText(_translate("Dialog", "Название сорта"))
-        self.label_2.setText(_translate("Dialog", "Степень обжарки"))
-        self.label_3.setText(_translate("Dialog", "Молотый/В зернах"))
-        self.label_4.setText(_translate("Dialog", "Цена"))
-        self.label_5.setText(_translate("Dialog", "Описание вкуса"))
-        self.label_6.setText(_translate("Dialog", "Объем упаковки"))
-
-
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
@@ -84,12 +68,6 @@ class Ui_Form(object):
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
-
-    def retranslateUi(self, Form):
-        _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
-        self.pushButton.setText(_translate("Form", "Добавить запись"))
-
 
 class MyWidget(QMainWindow, Ui_Form):
     def __init__(self):
